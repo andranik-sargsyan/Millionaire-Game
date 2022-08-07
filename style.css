@@ -1,0 +1,147 @@
+﻿body {
+    background-color: #040444;
+    color: white;
+    font-size: 20px;
+}
+
+#wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+#left {
+    width: 75%;
+    text-align: center;
+}
+
+    #left img {
+        margin: 50px;
+        width: 50%;
+    }
+
+#question {
+    height: 100px;
+    border: solid 2px white;
+    line-height: 50px;
+}
+
+#answers > div {
+    float: left;
+    width: calc(50% - 4px);
+    border: solid 2px white;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+    #answers > div:hover {
+        background-color: #ffff0080;
+    }
+
+    #answers > div::before {
+        font-weight: bold;
+        color: yellow;
+    }
+
+    #answers > div:nth-child(1)::before {
+        content: "A. ";
+    }
+
+    #answers > div:nth-child(2)::before {
+        content: "B. ";
+    }
+
+    #answers > div:nth-child(3)::before {
+        content: "C. ";
+    }
+
+    #answers > div:nth-child(4)::before {
+        content: "D. ";
+    }
+
+#right {
+    width: 25%;
+    height: 95%;
+    border: solid 2px white;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+    #right > div {
+        padding: 5px;
+        border: solid 1px white;
+        width: 90%;
+        text-align: center;
+    }
+
+        #right > div.current {
+            background-color: #ffff0080;
+        }
+
+        #right > div::before {
+            font-weight: bold;
+            color: yellow;
+        }
+
+        #right > div:nth-child(1)::before {
+            content: "15. ";
+        }
+
+        #right > div:nth-child(2)::before {
+            content: "14. ";
+        }
+
+        #right > div:nth-child(3)::before {
+            content: "13. ";
+        }
+
+        #right > div:nth-child(4)::before {
+            content: "12. ";
+        }
+
+        #right > div:nth-child(5)::before {
+            content: "11. ";
+        }
+
+        #right > div:nth-child(6)::before {
+            content: "10. ";
+        }
+
+        #right > div:nth-child(7)::before {
+            content: "9. ";
+        }
+
+        #right > div:nth-child(8)::before {
+            content: "8. ";
+        }
+
+        #right > div:nth-child(9)::before {
+            content: "7. ";
+        }
+
+        #right > div:nth-child(10)::before {
+            content: "6. ";
+        }
+
+        #right > div:nth-child(11)::before {
+            content: "5. ";
+        }
+
+        #right > div:nth-child(12)::before {
+            content: "4. ";
+        }
+
+        #right > div:nth-child(13)::before {
+            content: "3. ";
+        }
+
+        #right > div:nth-child(14)::before {
+            content: "2. ";
+        }
+
+        #right > div:nth-child(15)::before {
+            content: "1. ";
+        }
