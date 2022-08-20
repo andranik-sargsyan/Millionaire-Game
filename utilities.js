@@ -1,5 +1,7 @@
-﻿function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
+﻿function getRandomInt(min, max) {
+    return max
+        ? min + Math.floor(Math.random() * (max - min))
+        : Math.floor(Math.random() * min);
 }
 
 function isProbable(chanceInPercents) {

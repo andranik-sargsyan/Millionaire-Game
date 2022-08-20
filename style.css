@@ -19,10 +19,36 @@
         width: 50%;
     }
 
+#help {
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+    #help > div {
+        display: inline-block;
+        border: solid 1px white;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+        #help > div:hover {
+            background-color: #ffff0080;
+        }
+
+        #help > div.used {
+            background-color: #ff000080;
+            cursor: default;
+        }
+
 #question {
     height: 100px;
     border: solid 2px white;
     line-height: 50px;
+}
+
+.question-level {
+    font-weight: bold;
+    color: yellow;
 }
 
 #answers > div {
@@ -145,3 +171,7 @@
         #right > div:nth-child(15)::before {
             content: "1. ";
         }
+
+#sounds {
+    display: none;
+}
