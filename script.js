@@ -11,12 +11,12 @@ let helps = {
     "audience": () => {
         let correctPercent = getRandomInt(84 - 6 * level, 100 - 6 * level + 1);
 
-        let correctAnwerDiv = document.querySelector(`#answers > div[data-answer='${currentQuestion.answers[0]}']`);
-        correctAnwerDiv.innerText += ` (${correctPercent}%)`;
+        let correctAnswerDiv = document.querySelector(`#answers > div[data-answer='${currentQuestion.answers[0]}']`);
+        correctAnswerDiv.innerText += ` (${correctPercent}%)`;
 
         let rem = 100 - correctPercent;
         for (let i = 0; i < 4; i++) {
-            if (divAnswers[i] == correctAnwerDiv || divAnswers[i].style.visibility == "hidden") {
+            if (divAnswers[i] == correctAnswerDiv || divAnswers[i].style.visibility == "hidden") {
                 continue;
             }
 
